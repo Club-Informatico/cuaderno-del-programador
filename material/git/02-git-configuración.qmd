@@ -1,0 +1,107 @@
+# 02-comandos-Git
+
+## Verificación y Ayuda
+
+```bash
+git
+```
+Muestra los comandos principales de Git y opciones de ayuda general.
+
+```bash
+git --version
+```
+**Verifica la versión instalada** de Git en tu sistema.
+
+```bash
+git -v
+```
+Alias corto para `--version` (verifica la versión).
+
+```bash
+git -h
+```
+Muestra **ayuda rápida** con las opciones básicas de línea de comandos.
+
+## Configuración de Git
+
+```bash
+git config
+```
+Gestiona la **configuración** de Git (global, local o del sistema).
+
+```bash
+git config --global user.name "<nombre>"
+```
+Configura tu **nombre de usuario** globalmente para todos los repositorios.
+
+```bash
+git config --global user.email "<email>"
+```
+Configura tu **correo electrónico** globalmente (asociado a tus commits).
+
+## Trabajando con Git
+
+### Inicialización de Repositorios
+
+```bash
+git init
+```
+**Inicializa un nuevo repositorio** Git en el directorio actual.
+
+```bash
+git clone <url-repositorio>
+```
+**Clona un repositorio remoto** completo a tu máquina local.
+
+### Guardando Cambios
+
+```bash
+git status
+```
+Muestra el **estado actual** del repositorio (archivos modificados, staged, etc.).
+
+```bash
+git add <archivo>
+```
+**Añade archivos específicos** al área de staging (preparación para commit).
+
+```bash
+git add .
+```
+**Añade todos los archivos modificados** al área de staging.
+
+```bash
+git commit -m "<mensaje>"
+```
+**Guarda los cambios** en el historial con un mensaje descriptivo.
+
+```bash
+git commit --amend
+```
+**Modifica el último commit** (mensaje o archivos incluidos).
+
+### Consulta del Historial
+
+```bash
+git log
+```
+Muestra el **historial de commits** con detalles de autor, fecha y mensaje.
+
+```bash
+git log --oneline
+```
+Muestra el historial en **formato compacto** (una línea por commit).
+
+```bash
+git diff
+```
+Muestra las **diferencias** entre archivos modificados y la última versión.
+
+
+---
+
+>**💡 Consejos Prácticos:**
+>- Configura nombre y email antes de empezar a trabajar
+>- Usa mensajes de commit claros y descriptivos
+>- Revisa siempre `git status` antes de hacer commit
+>- `git add .` añade todos los cambios, pero puedes ser específico con `git add <archivo>`

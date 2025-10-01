@@ -1,0 +1,198 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Club Informático",
+    "section": "",
+    "text": "🏠 Home\nBienvenidos al manual de Club informático Chile.\nEn éste manual encontrarás la siguiente información:"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee @knuth84 for additional discussion of literate programming."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "material/anexos/colaborar.html#cómo-contribuir",
+    "href": "material/anexos/colaborar.html#cómo-contribuir",
+    "title": "Colaborar",
+    "section": "¿Cómo Contribuir?",
+    "text": "¿Cómo Contribuir?\n\nReportar Problemas\nSi encuentras errores, repórtalos creando un “issue” en nuestro repositorio de GitHub.\n\n\nProponer Mejoras\nPropón ideas creando un “issue” o enviando un “pull request” con tus sugerencias.\n\n\nContribuir con Código\n\nFork el repositorio: Crea una copia en tu cuenta de GitHub.\nClona tu fork:\ngit clone https://github.com/tu_usuario/XXXXXXXX.git\nCrea una rama:\ngit checkout -b mi_contribucion\nHaz tus cambios.\nCommit tus cambios:\ngit commit -m \"Descripción de mi contribución\"\nPush a tu fork:\ngit push origin mi_contribucion\nCrea un Pull Request: Describe tus cambios.\n\n\n\nDocumentación\nMejora la documentación siguiendo los mismos pasos.\n\n\nRevisión de Código\nAyuda revisando “pull requests” y proporcionando feedback constructivo."
+  },
+  {
+    "objectID": "material/anexos/colaborar.html#código-de-conducta",
+    "href": "material/anexos/colaborar.html#código-de-conducta",
+    "title": "Colaborar",
+    "section": "Código de Conducta",
+    "text": "Código de Conducta\nMantén un ambiente respetuoso. Lee nuestro Código de Conducta antes de contribuir."
+  },
+  {
+    "objectID": "material/git/01-comandos-básicos.html",
+    "href": "material/git/01-comandos-básicos.html",
+    "title": "Comandos básicos de la terminal",
+    "section": "",
+    "text": "ls\ncd &lt;directorio&gt;\ncd ..\npwd\nmkdir &lt;nombre&gt;\ntouch &lt;nombre&gt;\nrm\nrm -Rf\ncp &lt;nombre&gt; &lt;directorio&gt;\nmv &lt;nombre&gt; &lt;directorio&gt;"
+  },
+  {
+    "objectID": "material/git/01-comandos-básicos.html#navegación-y-exploración",
+    "href": "material/git/01-comandos-básicos.html#navegación-y-exploración",
+    "title": "01-comandos-básicos",
+    "section": "Navegación y Exploración",
+    "text": "Navegación y Exploración\n\nListar\nLista el contenido del directorio actual. Muestra archivos y carpetas visibles.\nls\n\n\nCambiar de directorio\nCambia de directorio hacia la carpeta especificada. Ej: cd Documentos\ncd &lt;directorio&gt;\n\n\nRetroceder un nivel\nRetrocede un nivel en la estructura de directorios, volviendo a la carpeta padre.\ncd ..\n\n\nMostrar la ruta completa\nmuestra la ruta del directorio actual (Print Working Directory).\npwd"
+  },
+  {
+    "objectID": "material/git/01-comandos-básicos.html#gestión-de-archivos-y-carpetas",
+    "href": "material/git/01-comandos-básicos.html#gestión-de-archivos-y-carpetas",
+    "title": "01-comandos-básicos",
+    "section": "Gestión de Archivos y Carpetas",
+    "text": "Gestión de Archivos y Carpetas\n\nCrear una nueva carpeta\nPara crear una carpeta se debe indicar el nombre. Ej: mkdir proyecto_nuevo\nmkdir &lt;nombre&gt;\n\n\nCrea un archivo vacío o actualiza la fecha de modificación si ya existe.\ntouch &lt;nombre&gt;\n\n\nElimina archivos permanentemente (¡Usar con precaución! No va a la papelera).\nrm &lt;archivo&gt;\n\n\nElimina carpetas recursivamente de forma forzada:\nrm -Rf &lt;carpeta&gt;\n-R: recursivo (elimina todo el contenido)\n-f: forzado (sin confirmaciones)"
+  },
+  {
+    "objectID": "material/git/01-comandos-básicos.html#operaciones-con-archivos",
+    "href": "material/git/01-comandos-básicos.html#operaciones-con-archivos",
+    "title": "01-comandos-básicos",
+    "section": "Operaciones con Archivos",
+    "text": "Operaciones con Archivos\nCopia archivos o carpetas desde la ubicación origen al destino. Ej: cp archivo.txt ~/backup/\ncp &lt;origen&gt; &lt;destino&gt;\n\nMueve o renombra archivos/carpetas. Para renombrar: mv viejo.txt nuevo.txt\nmv &lt;origen&gt; &lt;destino&gt;\n\n\n💡 Consejo: Usa la tecla Tab para autocompletar nombres de archivos y directorios, y ↑/↓ para navegar el historial de comandos."
+  },
+  {
+    "objectID": "material/git/02-git-configuración.html#revisar-la-versión",
+    "href": "material/git/02-git-configuración.html#revisar-la-versión",
+    "title": "Comandos de Git",
+    "section": "Revisar la versión",
+    "text": "Revisar la versión\n´´´bash git ´´´\n´´´bash git –version ´´´\n´´´bash git -v ´´´\n´´´bash git -h ´´´"
+  },
+  {
+    "objectID": "material/git/02-git-configuración.html#configuración-de-git",
+    "href": "material/git/02-git-configuración.html#configuración-de-git",
+    "title": "02-comandos-Git",
+    "section": "Configuración de Git",
+    "text": "Configuración de Git\ngit config\nGestiona la configuración de Git (global, local o del sistema).\ngit config --global user.name \"&lt;nombre&gt;\"\nConfigura tu nombre de usuario globalmente para todos los repositorios.\ngit config --global user.email \"&lt;email&gt;\"\nConfigura tu correo electrónico globalmente (asociado a tus commits)."
+  },
+  {
+    "objectID": "material/git/02-git-configuración.html#trabajando-en-git",
+    "href": "material/git/02-git-configuración.html#trabajando-en-git",
+    "title": "Comandos de Git",
+    "section": "Trabajando en git",
+    "text": "Trabajando en git\n\nIniciar repositorio\n´´´bash git init ´´´\n\n\nCrear ramas\n´´´bash git ´´´\n\n\nGuardando cambios\n´´´bash git status ´´´\n´´´bash git add  ´´´\n´´´bash git add . ´´´\n´´´bash git commit -m “” ´´´\n\n\nEstado\n´´´bash git log ´´´\n´´´bash git ´´´"
+  },
+  {
+    "objectID": "material/git/02-git-configuración.html#verificación-y-ayuda",
+    "href": "material/git/02-git-configuración.html#verificación-y-ayuda",
+    "title": "02-comandos-Git",
+    "section": "Verificación y Ayuda",
+    "text": "Verificación y Ayuda\ngit\nMuestra los comandos principales de Git y opciones de ayuda general.\ngit --version\nVerifica la versión instalada de Git en tu sistema.\ngit -v\nAlias corto para --version (verifica la versión).\ngit -h\nMuestra ayuda rápida con las opciones básicas de línea de comandos."
+  },
+  {
+    "objectID": "material/git/02-git-configuración.html#trabajando-con-git",
+    "href": "material/git/02-git-configuración.html#trabajando-con-git",
+    "title": "02-comandos-Git",
+    "section": "Trabajando con Git",
+    "text": "Trabajando con Git\n\nInicialización de Repositorios\ngit init\nInicializa un nuevo repositorio Git en el directorio actual.\ngit clone &lt;url-repositorio&gt;\nClona un repositorio remoto completo a tu máquina local.\n\n\nGuardando Cambios\ngit status\nMuestra el estado actual del repositorio (archivos modificados, staged, etc.).\ngit add &lt;archivo&gt;\nAñade archivos específicos al área de staging (preparación para commit).\ngit add .\nAñade todos los archivos modificados al área de staging.\ngit commit -m \"&lt;mensaje&gt;\"\nGuarda los cambios en el historial con un mensaje descriptivo.\ngit commit --amend\nModifica el último commit (mensaje o archivos incluidos).\n\n\nConsulta del Historial\ngit log\nMuestra el historial de commits con detalles de autor, fecha y mensaje.\ngit log --oneline\nMuestra el historial en formato compacto (una línea por commit).\ngit diff\nMuestra las diferencias entre archivos modificados y la última versión.\n\n\n💡 Consejos Prácticos: - Configura nombre y email antes de empezar a trabajar - Usa mensajes de commit claros y descriptivos - Revisa siempre git status antes de hacer commit - git add . añade todos los cambios, pero puedes ser específico con git add &lt;archivo&gt;"
+  },
+  {
+    "objectID": "material/git/03-ramas-y-remotos.html#trabajo-con-repositorios-remotos",
+    "href": "material/git/03-ramas-y-remotos.html#trabajo-con-repositorios-remotos",
+    "title": "03-ramas-y-remotos",
+    "section": "Trabajo con Repositorios Remotos",
+    "text": "Trabajo con Repositorios Remotos\ngit remote add origin &lt;url-repositorio&gt;\nAñade un repositorio remoto llamado “origin”.\ngit remote -v\nLista todos los repositorios remotos configurados.\ngit push origin &lt;nombre-rama&gt;\nEnvía commits al repositorio remoto (rama especificada).\ngit push -u origin &lt;nombre-rama&gt;\nEnvía commits y establece la rama remota por defecto.\ngit pull origin &lt;nombre-rama&gt;\nObtiene cambios del remoto y los fusiona localmente.\ngit fetch origin\nDescarga cambios del remoto pero no los fusiona."
+  },
+  {
+    "objectID": "material/git/03-ramas-y-remotos.html#gestión-de-ramas",
+    "href": "material/git/03-ramas-y-remotos.html#gestión-de-ramas",
+    "title": "03-ramas-y-remotos",
+    "section": "Gestión de ramas",
+    "text": "Gestión de ramas\ngit branch\nLista todas las ramas locales y muestra la rama actual.\ngit branch &lt;nombre-rama&gt;\nCrea una nueva rama con el nombre especificado.\ngit checkout &lt;nombre-rama&gt;\nCambia a la rama especificada.\ngit checkout -b &lt;nombre-rama&gt;\nCrea y cambia a una nueva rama (combinación de branch + checkout).\ngit merge &lt;nombre-rama&gt;\nFusiona la rama especificada con la rama actual.\ngit branch -d &lt;nombre-rama&gt;\nElimina una rama local (solo si ya fue fusionada).\ngit branch -D &lt;nombre-rama&gt;\nElimina una rama forzadamente (aunque no esté fusionada)."
+  },
+  {
+    "objectID": "material/git/04-operaciones-avanzadas.html#resolución-de-conflictos",
+    "href": "material/git/04-operaciones-avanzadas.html#resolución-de-conflictos",
+    "title": "04-operaciones-avanzadas",
+    "section": "Resolución de Conflictos",
+    "text": "Resolución de Conflictos\ngit mergetool\nAbre una herramienta visual para resolver conflictos de fusión.\ngit revert &lt;commit-hash&gt;\nCrea un nuevo commit que deshace los cambios de un commit específico.\n\n🛠️ Flujo de Trabajo Típico:\ngit checkout -b feature/nueva-funcionalidad\n# Realizar cambios...\ngit add .\ngit commit -m \"Agrega nueva funcionalidad\"\ngit push origin feature/nueva-funcionalidad\n# Crear Pull Request en GitHub/GitLab\n\n💡 Buenas Prácticas:\n\nHaz commits pequeños y atómicos\nEscribe mensajes de commit claros y descriptivos\nSincroniza frecuentemente con el repositorio remoto\nUsa ramas para features nuevos o experimentos\nNunca hagas git push --force en ramas compartidas"
+  },
+  {
+    "objectID": "material/git/04-operaciones-avanzadas.html#almacenamiento-temporal",
+    "href": "material/git/04-operaciones-avanzadas.html#almacenamiento-temporal",
+    "title": "04-operaciones-avanzadas",
+    "section": "Almacenamiento temporal",
+    "text": "Almacenamiento temporal\ngit stash\nGuarda cambios temporales sin hacer commit (útil para cambiar de rama).\ngit stash pop\nRecupera los cambios guardados con stash.\ngit reset --soft HEAD~1\nDeshace el último commit pero mantiene los cambios en staging.\ngit reset --hard HEAD~1\nElimina el último commit y todos los cambios (¡Cuidado! Es destructivo).\ngit rebase &lt;rama-base&gt;\nReaplica commits sobre otra rama (reescribe el historial).\ngit tag &lt;nombre-tag&gt;\nCrea una etiqueta para marcar versiones específicas.\ngit cherry-pick &lt;commit-hash&gt;\nAplica un commit específico a la rama actual."
+  },
+  {
+    "objectID": "material/atajos/01-python.html#ejecución-de-python",
+    "href": "material/atajos/01-python.html#ejecución-de-python",
+    "title": "01-Python",
+    "section": "Ejecución de Python",
+    "text": "Ejecución de Python\npython\nAbre el intérprete interactivo de Python (REPL) donde puedes ejecutar código línea por línea.\npython --version\nVerifica la versión de Python instalada en el sistema.\npython -V\nAlias corto para --version (muestra la versión).\npython script.py\nEjecuta un archivo Python desde la terminal.\npython -m &lt;modulo&gt;\nEjecuta un módulo como script (ej: python -m http.server)."
+  },
+  {
+    "objectID": "material/atajos/01-python.html#opciones-útiles-de-línea-de-comandos",
+    "href": "material/atajos/01-python.html#opciones-útiles-de-línea-de-comandos",
+    "title": "01-Python",
+    "section": "Opciones Útiles de Línea de Comandos",
+    "text": "Opciones Útiles de Línea de Comandos\npython -c \"&lt;código&gt;\"\nEjecuta código Python directamente desde la terminal.\npython -i script.py\nEjecuta un script y luego entra al modo interactivo manteniendo las variables.\npython -O script.py\nEjecuta el script con optimizaciones básicas.\npython -OO script.py\nEjecuta con optimizaciones agresivas (elimina docstrings)."
+  },
+  {
+    "objectID": "material/atajos/01-python.html#entornos-virtuales-virtual-environments",
+    "href": "material/atajos/01-python.html#entornos-virtuales-virtual-environments",
+    "title": "01-Python",
+    "section": "Entornos Virtuales (Virtual Environments)",
+    "text": "Entornos Virtuales (Virtual Environments)\npython -m venv &lt;nombre-entorno&gt;\nCrea un entorno virtual para aislar dependencias del proyecto.\nsource &lt;nombre-entorno&gt;/bin/activate\nActiva el entorno virtual (Linux/Mac).\n&lt;nombre-entorno&gt;\\Scripts\\activate\nActiva el entorno virtual (Windows).\ndeactivate\nDesactiva el entorno virtual actual."
+  },
+  {
+    "objectID": "material/atajos/01-python.html#gestión-de-paquetes-con-pip",
+    "href": "material/atajos/01-python.html#gestión-de-paquetes-con-pip",
+    "title": "01-Python",
+    "section": "Gestión de Paquetes con pip",
+    "text": "Gestión de Paquetes con pip\npip install &lt;paquete&gt;\nInstala un paquete de Python desde PyPI.\npip install -r requirements.txt\nInstala todas las dependencias listadas en un archivo requirements.txt.\npip freeze &gt; requirements.txt\nGenera un archivo requirements.txt con las dependencias actuales.\npip uninstall &lt;paquete&gt;\nDesinstala un paquete.\npip list\nLista todos los paquetes instalados.\npip show &lt;paquete&gt;\nMuestra información detallada de un paquete específico.\npip install --upgrade &lt;paquete&gt;\nActualiza un paquete a la última versión."
+  },
+  {
+    "objectID": "material/atajos/01-python.html#desarrollo-y-depuración",
+    "href": "material/atajos/01-python.html#desarrollo-y-depuración",
+    "title": "01-Python",
+    "section": "Desarrollo y Depuración",
+    "text": "Desarrollo y Depuración\npython -m pdb script.py\nEjecuta el script con el depurador integrado de Python.\npython -m doctest script.py\nEjecuta tests doctest incluidos en los docstrings.\npython -m unittest discover\nDescubre y ejecuta tests unittest automáticamente.\npython -m pytest\nEjecuta tests usando pytest (debe estar instalado)."
+  },
+  {
+    "objectID": "material/atajos/01-python.html#herramientas-de-desarrollo",
+    "href": "material/atajos/01-python.html#herramientas-de-desarrollo",
+    "title": "01-Python",
+    "section": "Herramientas de Desarrollo",
+    "text": "Herramientas de Desarrollo\npython -m http.server 8000\nSirve archivos locales por HTTP en el puerto especificado.\npython -m json.tool archivo.json\nFormatea y valida archivos JSON.\npython -m timeit \"&lt;código&gt;\"\nMide el tiempo de ejecución de código Python.\npython -m cProfile script.py\nPerfila el código para analizar rendimiento."
+  },
+  {
+    "objectID": "material/atajos/01-python.html#creación-de-paquetes",
+    "href": "material/atajos/01-python.html#creación-de-paquetes",
+    "title": "01-Python",
+    "section": "Creación de Paquetes",
+    "text": "Creación de Paquetes\npython setup.py sdist\nCrea un paquete fuente para distribución.\npython -m build\nConstruye el paquete (requiere el módulo build instalado).\npython -m twine upload dist/*\nSube el paquete a PyPI (requiere twine instalado)."
+  },
+  {
+    "objectID": "material/atajos/01-python.html#comandos-útiles-para-jupyter",
+    "href": "material/atajos/01-python.html#comandos-útiles-para-jupyter",
+    "title": "01-Python",
+    "section": "Comandos Útiles para Jupyter",
+    "text": "Comandos Útiles para Jupyter\njupyter notebook\nInicia Jupyter Notebook en el navegador.\njupyter lab\nInicia Jupyter Lab (entorno más avanzado).\njupyter kernel --version\nVerifica la versión del kernel de Jupyter."
+  },
+  {
+    "objectID": "material/atajos/01-python.html#type-checking-y-análisis",
+    "href": "material/atajos/01-python.html#type-checking-y-análisis",
+    "title": "01-Python",
+    "section": "Type Checking y Análisis",
+    "text": "Type Checking y Análisis\npython -m mypy script.py\nVerifica tipos estáticos (requiere mypy instalado).\npython -m pylint script.py\nAnaliza el código en busca de errores y estilo (requiere pylint).\npython -m black script.py\nFormatea el código automáticamente (requiere black).\npython -m isort script.py\nOrganiza imports automáticamente (requiere isort).\n\n🛠️ Flujo de Trabajo Típico:\n# Crear y activar entorno virtual\npython -m venv myenv\nsource myenv/bin/activate\n\n# Instalar dependencias\npip install -r requirements.txt\n\n# Ejecutar tests\npython -m pytest\n\n# Ejecutar aplicación\npython main.py\n🔧 Comandos de Depuración Rápidos:\n# Ejecutar con depuración\npython -m pdb script.py\n\n# Verificar tipos\npython -m mypy script.py\n\n# Formatear código\npython -m black script.py\n\n💡 Buenas Prácticas:\n\nSiempre usa entornos virtuales por proyecto\nMantén un requirements.txt actualizado\nUsa type hints para mejor mantenibilidad\nEjecuta tests antes de hacer commit\nUsa formateadores de código como black"
+  }
+]

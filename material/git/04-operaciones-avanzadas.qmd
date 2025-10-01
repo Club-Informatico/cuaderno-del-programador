@@ -1,0 +1,70 @@
+# 04-operaciones-avanzadas
+
+## Almacenamiento temporal
+
+```bash
+git stash
+```
+**Guarda cambios temporales** sin hacer commit (útil para cambiar de rama).
+
+```bash
+git stash pop
+```
+**Recupera los cambios** guardados con stash.
+
+```bash
+git reset --soft HEAD~1
+```
+**Deshace el último commit** pero mantiene los cambios en staging.
+
+```bash
+git reset --hard HEAD~1
+```
+**Elimina el último commit** y todos los cambios (¡Cuidado! Es destructivo).
+
+```bash
+git rebase <rama-base>
+```
+**Reaplica commits** sobre otra rama (reescribe el historial).
+
+```bash
+git tag <nombre-tag>
+```
+**Crea una etiqueta** para marcar versiones específicas.
+
+```bash
+git cherry-pick <commit-hash>
+```
+**Aplica un commit específico** a la rama actual.
+
+## Resolución de Conflictos
+
+```bash
+git mergetool
+```
+Abre una **herramienta visual** para resolver conflictos de fusión.
+
+```bash
+git revert <commit-hash>
+```
+**Crea un nuevo commit** que deshace los cambios de un commit específico.
+
+---
+
+**🛠️ Flujo de Trabajo Típico:**
+```bash
+git checkout -b feature/nueva-funcionalidad
+# Realizar cambios...
+git add .
+git commit -m "Agrega nueva funcionalidad"
+git push origin feature/nueva-funcionalidad
+# Crear Pull Request en GitHub/GitLab
+```
+
+>**💡 Buenas Prácticas:**
+>
+>- Haz commits pequeños y atómicos
+>- Escribe mensajes de commit claros y descriptivos
+>- Sincroniza frecuentemente con el repositorio remoto
+>- Usa ramas para features nuevos o experimentos
+>- Nunca hagas `git push --force` en ramas compartidas

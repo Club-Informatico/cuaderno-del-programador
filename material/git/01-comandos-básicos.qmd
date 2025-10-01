@@ -1,0 +1,74 @@
+# 01-comandos-básicos
+
+## Navegación y Exploración
+
+### **Listar** 
+Lista el contenido del directorio actual. Muestra archivos y carpetas visibles.
+```bash
+ls
+```
+
+### **Cambiar de directorio** 
+Cambia de directorio hacia la carpeta especificada. Ej: `cd Documentos`
+```bash
+cd <directorio>
+```
+
+### **Retroceder un nivel** 
+Retrocede un nivel en la estructura de directorios, volviendo a la carpeta padre.
+```bash
+cd ..
+```
+
+### **Mostrar la ruta completa** 
+muestra la ruta del directorio actual (Print Working Directory).
+```bash
+pwd
+```
+
+## Gestión de Archivos y Carpetas
+
+### **Crear una nueva carpeta** 
+Para crear una carpeta se debe indicar el nombre. Ej: `mkdir proyecto_nuevo`
+```bash
+mkdir <nombre>
+```
+
+### **Crear un archivo vacío**
+```bash
+touch <nombre>
+```
+
+### **Eliminar archivos** permanentemente (¡Usar con precaución! No va a la papelera).
+```bash
+rm <archivo>
+```
+
+### **Eliminar carpetas recursivamente** de forma forzada:
+```bash
+rm -Rf <carpeta>
+```
+
+`-R`: recursivo (elimina todo el contenido)
+
+`-f`: forzado (sin confirmaciones)
+
+## Operaciones con Archivos
+
+**Copiar archivos o carpetas** desde la ubicación origen al destino. Ej: `cp archivo.txt ~/backup/`
+```bash
+cp <origen> <destino>
+```
+
+### **Mover o renombrar** archivos/carpetas. Para renombrar: `mv viejo.txt nuevo.txt`
+```bash
+mv <origen> <destino>
+```
+
+---
+
+
+>**💡 Consejo:** Usa la tecla `Tab` para autocompletar nombres de archivos y directorios, y `↑`/`↓` para navegar el historial de comandos.
+>
+
+

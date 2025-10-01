@@ -1,0 +1,41 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Club Informático"
+  author: "Club Informático - Chile"
+  date: "15-09-2025"
+  favicon: "images/ci.jpg"
+  repo-url: "https://github.com/Club-Informatico/Club-Informatico"
+  
+  
+  chapters:
+    - index.qmd
+    - part: Git y Github
+      chapters:
+        - material\git\01-comandos-básicos.qmd
+        - material\git\02-git-configuración.qmd
+        - material\git\03-ramas-y-remotos.qmd
+        - material\git\04-operaciones-avanzadas.qmd
+    - part: Atajos
+      chapters:
+        - material\atajos\01-python.qmd
+    - material\anexos\colaborar.qmd
+
+
+index:
+  qmd:
+  lang: es
+
+format:
+  html:
+    theme: flatly
+    number-sections: false
+    toc: false
+    page-layout: full
+
+
+
+
+

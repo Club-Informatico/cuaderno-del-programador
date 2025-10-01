@@ -1,0 +1,247 @@
+# 01-Python
+
+## Ejecución de Python
+
+```bash
+python
+```
+Abre el **intérprete interactivo** de Python (REPL) donde puedes ejecutar código línea por línea.
+
+```bash
+python --version
+```
+**Verifica la versión** de Python instalada en el sistema.
+
+```bash
+python -V
+```
+Alias corto para `--version` (muestra la versión).
+
+```bash
+python script.py
+```
+**Ejecuta un archivo Python** desde la terminal.
+
+```bash
+python -m <modulo>
+```
+Ejecuta un **módulo como script** (ej: `python -m http.server`).
+
+## Opciones Útiles de Línea de Comandos
+
+```bash
+python -c "<código>"
+```
+Ejecuta **código Python directamente** desde la terminal.
+
+```bash
+python -i script.py
+```
+Ejecuta un script y luego **entra al modo interactivo** manteniendo las variables.
+
+```bash
+python -O script.py
+```
+Ejecuta el script con **optimizaciones básicas**.
+
+```bash
+python -OO script.py
+```
+Ejecuta con **optimizaciones agresivas** (elimina docstrings).
+
+## Entornos Virtuales (Virtual Environments)
+
+```bash
+python -m venv <nombre-entorno>
+```
+**Crea un entorno virtual** para aislar dependencias del proyecto.
+
+```bash
+source <nombre-entorno>/bin/activate
+```
+**Activa el entorno virtual** (Linux/Mac).
+
+```bash
+<nombre-entorno>\Scripts\activate
+```
+**Activa el entorno virtual** (Windows).
+
+```bash
+deactivate
+```
+**Desactiva el entorno virtual** actual.
+
+## Gestión de Paquetes con pip
+
+```bash
+pip install <paquete>
+```
+**Instala un paquete** de Python desde PyPI.
+
+```bash
+pip install -r requirements.txt
+```
+**Instala todas las dependencias** listadas en un archivo requirements.txt.
+
+```bash
+pip freeze > requirements.txt
+```
+**Genera un archivo requirements.txt** con las dependencias actuales.
+
+```bash
+pip uninstall <paquete>
+```
+**Desinstala un paquete**.
+
+```bash
+pip list
+```
+**Lista todos los paquetes** instalados.
+
+```bash
+pip show <paquete>
+```
+**Muestra información detallada** de un paquete específico.
+
+```bash
+pip install --upgrade <paquete>
+```
+**Actualiza un paquete** a la última versión.
+
+## Desarrollo y Depuración
+
+```bash
+python -m pdb script.py
+```
+Ejecuta el script con el **depurador integrado** de Python.
+
+```bash
+python -m doctest script.py
+```
+Ejecuta **tests doctest** incluidos en los docstrings.
+
+```bash
+python -m unittest discover
+```
+**Descubre y ejecuta tests** unittest automáticamente.
+
+```bash
+python -m pytest
+```
+Ejecuta tests usando **pytest** (debe estar instalado).
+
+## Herramientas de Desarrollo
+
+```bash
+python -m http.server 8000
+```
+**Sirve archivos locales** por HTTP en el puerto especificado.
+
+```bash
+python -m json.tool archivo.json
+```
+**Formatea y valida** archivos JSON.
+
+```bash
+python -m timeit "<código>"
+```
+**Mide el tiempo de ejecución** de código Python.
+
+```bash
+python -m cProfile script.py
+```
+**Perfila el código** para analizar rendimiento.
+
+## Creación de Paquetes
+
+```bash
+python setup.py sdist
+```
+**Crea un paquete fuente** para distribución.
+
+```bash
+python -m build
+```
+**Construye el paquete** (requiere el módulo build instalado).
+
+```bash
+python -m twine upload dist/*
+```
+**Sube el paquete** a PyPI (requiere twine instalado).
+
+## Comandos Útiles para Jupyter
+
+```bash
+jupyter notebook
+```
+**Inicia Jupyter Notebook** en el navegador.
+
+```bash
+jupyter lab
+```
+**Inicia Jupyter Lab** (entorno más avanzado).
+
+```bash
+jupyter kernel --version
+```
+Verifica la versión del **kernel de Jupyter**.
+
+## Type Checking y Análisis
+
+```bash
+python -m mypy script.py
+```
+**Verifica tipos estáticos** (requiere mypy instalado).
+
+```bash
+python -m pylint script.py
+```
+**Analiza el código** en busca de errores y estilo (requiere pylint).
+
+```bash
+python -m black script.py
+```
+**Formatea el código** automáticamente (requiere black).
+
+```bash
+python -m isort script.py
+```
+**Organiza imports** automáticamente (requiere isort).
+
+---
+
+**🛠️ Flujo de Trabajo Típico:**
+```bash
+# Crear y activar entorno virtual
+python -m venv myenv
+source myenv/bin/activate
+
+# Instalar dependencias
+pip install -r requirements.txt
+
+# Ejecutar tests
+python -m pytest
+
+# Ejecutar aplicación
+python main.py
+```
+
+**🔧 Comandos de Depuración Rápidos:**
+```bash
+# Ejecutar con depuración
+python -m pdb script.py
+
+# Verificar tipos
+python -m mypy script.py
+
+# Formatear código
+python -m black script.py
+```
+
+>**💡 Buenas Prácticas:**
+>
+>- Siempre usa entornos virtuales por proyecto
+>- Mantén un requirements.txt actualizado 
+>- Usa type hints para mejor mantenibilidad 
+>- Ejecuta tests antes de hacer commit 
+>- Usa formateadores de código como black 

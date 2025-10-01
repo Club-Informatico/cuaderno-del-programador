@@ -1,0 +1,69 @@
+# 03-ramas-y-remotos
+
+## Gestión de ramas
+```bash
+git branch
+```
+Lista todas las **ramas locales** y muestra la rama actual.
+
+```bash
+git branch <nombre-rama>
+```
+**Crea una nueva rama** con el nombre especificado.
+
+```bash
+git checkout <nombre-rama>
+```
+**Cambia a la rama** especificada.
+
+```bash
+git checkout -b <nombre-rama>
+```
+**Crea y cambia** a una nueva rama (combinación de branch + checkout).
+
+```bash
+git merge <nombre-rama>
+```
+**Fusiona la rama especificada** con la rama actual.
+
+```bash
+git branch -d <nombre-rama>
+```
+**Elimina una rama** local (solo si ya fue fusionada).
+
+```bash
+git branch -D <nombre-rama>
+```
+**Elimina una rama forzadamente** (aunque no esté fusionada).
+
+## Trabajo con Repositorios Remotos
+
+```bash
+git remote add origin <url-repositorio>
+```
+**Añade un repositorio remoto** llamado "origin".
+
+```bash
+git remote -v
+```
+Lista todos los **repositorios remotos** configurados.
+
+```bash
+git push origin <nombre-rama>
+```
+**Envía commits** al repositorio remoto (rama especificada).
+
+```bash
+git push -u origin <nombre-rama>
+```
+**Envía commits y establece** la rama remota por defecto.
+
+```bash
+git pull origin <nombre-rama>
+```
+**Obtiene cambios del remoto** y los fusiona localmente.
+
+```bash
+git fetch origin
+```
+**Descarga cambios del remoto** pero no los fusiona.

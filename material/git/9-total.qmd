@@ -1,0 +1,239 @@
+# Comandos de Git - Guía Completa
+
+## Verificación y Ayuda
+
+```bash
+git
+```
+Muestra los comandos principales de Git y opciones de ayuda general.
+
+```bash
+git --version
+```
+**Verifica la versión instalada** de Git en tu sistema.
+
+```bash
+git -v
+```
+Alias corto para `--version` (verifica la versión).
+
+```bash
+git -h
+```
+Muestra **ayuda rápida** con las opciones básicas de línea de comandos.
+
+---
+
+## Configuración de Git
+
+```bash
+git config
+```
+Gestiona la **configuración** de Git (global, local o del sistema).
+
+```bash
+git config --global user.name "<nombre>"
+```
+Configura tu **nombre de usuario** globalmente para todos los repositorios.
+
+```bash
+git config --global user.email "<email>"
+```
+Configura tu **correo electrónico** globalmente (asociado a tus commits).
+
+## Trabajando con Git
+
+### Inicialización de Repositorios
+
+```bash
+git init
+```
+**Inicializa un nuevo repositorio** Git en el directorio actual.
+
+```bash
+git clone <url-repositorio>
+```
+**Clona un repositorio remoto** completo a tu máquina local.
+
+### Guardando Cambios
+
+```bash
+git status
+```
+Muestra el **estado actual** del repositorio (archivos modificados, staged, etc.).
+
+```bash
+git add <archivo>
+```
+**Añade archivos específicos** al área de staging (preparación para commit).
+
+```bash
+git add .
+```
+**Añade todos los archivos modificados** al área de staging.
+
+```bash
+git commit -m "<mensaje>"
+```
+**Guarda los cambios** en el historial con un mensaje descriptivo.
+
+```bash
+git commit --amend
+```
+**Modifica el último commit** (mensaje o archivos incluidos).
+
+### Consulta del Historial
+
+```bash
+git log
+```
+Muestra el **historial de commits** con detalles de autor, fecha y mensaje.
+
+```bash
+git log --oneline
+```
+Muestra el historial en **formato compacto** (una línea por commit).
+
+```bash
+git diff
+```
+Muestra las **diferencias** entre archivos modificados y la última versión.
+
+## Gestión de Ramas (Branches)
+
+```bash
+git branch
+```
+Lista todas las **ramas locales** y muestra la rama actual.
+
+```bash
+git branch <nombre-rama>
+```
+**Crea una nueva rama** con el nombre especificado.
+
+```bash
+git checkout <nombre-rama>
+```
+**Cambia a la rama** especificada.
+
+```bash
+git checkout -b <nombre-rama>
+```
+**Crea y cambia** a una nueva rama (combinación de branch + checkout).
+
+```bash
+git merge <nombre-rama>
+```
+**Fusiona la rama especificada** con la rama actual.
+
+```bash
+git branch -d <nombre-rama>
+```
+**Elimina una rama** local (solo si ya fue fusionada).
+
+```bash
+git branch -D <nombre-rama>
+```
+**Elimina una rama forzadamente** (aunque no esté fusionada).
+
+## Trabajo con Repositorios Remotos
+
+```bash
+git remote add origin <url-repositorio>
+```
+**Añade un repositorio remoto** llamado "origin".
+
+```bash
+git remote -v
+```
+Lista todos los **repositorios remotos** configurados.
+
+```bash
+git push origin <nombre-rama>
+```
+**Envía commits** al repositorio remoto (rama especificada).
+
+```bash
+git push -u origin <nombre-rama>
+```
+**Envía commits y establece** la rama remota por defecto.
+
+```bash
+git pull origin <nombre-rama>
+```
+**Obtiene cambios del remoto** y los fusiona localmente.
+
+```bash
+git fetch origin
+```
+**Descarga cambios del remoto** pero no los fusiona.
+
+## Operaciones Avanzadas
+
+```bash
+git stash
+```
+**Guarda cambios temporales** sin hacer commit (útil para cambiar de rama).
+
+```bash
+git stash pop
+```
+**Recupera los cambios** guardados con stash.
+
+```bash
+git reset --soft HEAD~1
+```
+**Deshace el último commit** pero mantiene los cambios en staging.
+
+```bash
+git reset --hard HEAD~1
+```
+**Elimina el último commit** y todos los cambios (¡Cuidado! Es destructivo).
+
+```bash
+git rebase <rama-base>
+```
+**Reaplica commits** sobre otra rama (reescribe el historial).
+
+```bash
+git tag <nombre-tag>
+```
+**Crea una etiqueta** para marcar versiones específicas.
+
+```bash
+git cherry-pick <commit-hash>
+```
+**Aplica un commit específico** a la rama actual.
+
+## Resolución de Conflictos
+
+```bash
+git mergetool
+```
+Abre una **herramienta visual** para resolver conflictos de fusión.
+
+```bash
+git revert <commit-hash>
+```
+**Crea un nuevo commit** que deshace los cambios de un commit específico.
+
+---
+
+**💡 Buenas Prácticas:**
+- Haz commits pequeños y atómicos
+- Escribe mensajes de commit claros y descriptivos
+- Sincroniza frecuentemente con el repositorio remoto
+- Usa ramas para features nuevos o experimentos
+- Nunca hagas `git push --force` en ramas compartidas
+
+**🛠️ Flujo de Trabajo Típico:**
+```bash
+git checkout -b feature/nueva-funcionalidad
+# Realizar cambios...
+git add .
+git commit -m "Agrega nueva funcionalidad"
+git push origin feature/nueva-funcionalidad
+# Crear Pull Request en GitHub/GitLab
+```
+
+¿Necesitas que profundice en algún comando específico o en algún flujo de trabajo particular?
