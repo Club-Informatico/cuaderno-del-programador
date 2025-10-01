@@ -90,5 +90,11 @@ Puedes usar, modificar y redistribuir el contenido, siempre manteniendo esta mis
 Forma parte de nuestra comunidad en **Club Informático** y comparte tus ideas, dudas y proyectos.
 Juntos construimos conocimiento abierto. 💬
 
+---
 
+## Colaboradores
+
+<a href="https://github.com/Club-Informatico/cuaderno-del-programador/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Club-Informatico/cuaderno-del-programador" />
+</a>
 
