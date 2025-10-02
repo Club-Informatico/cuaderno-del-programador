@@ -48,20 +48,19 @@ Sigue estos pasos para colaborar:
 ## 📂 Estructura sugerida
 
 ```
-material/
-├── git/
-│   ├── 01-comandos-básicos.qmd
-│   ├── 02-git-configuración.qmd
-│   ├── 03-ramas-y-remotos.qmd
-│   └── 04-operaciones-avanzadas.qmd
-├── python/
-│   └── 01-introduccion.qmd
-├── ia/
-│   └── 01-conceptos.qmd
-├── lenguajes/
-│   └── 01-general.qmd
-└── anexos/
-    └── colaborar.qmd
+.
+├── images/
+│   └── ci.jpg
+└── material/
+    ├── anexos/
+    │   └── colaborar.qmd
+    ├── atajos/
+    │   └── 01-python.qmd
+    └── git/
+        ├── 01-comandos-básicos.qmd
+        ├── 02-git-configuración.qmd
+        ├── 03-ramas-y-remotos.qmd
+        └── 04-operaciones-avanzadas.qmd
 
 ```
 
