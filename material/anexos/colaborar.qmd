@@ -6,7 +6,7 @@
 
 ### Reportar Problemas
 
-Si encuentras errores, repórtalos creando un "issue" en nuestro [repositorio de GitHub](https://github.com/club-informatico/XXXXXXXX).
+Si encuentras errores, repórtalos creando un "issue" en nuestro [repositorio de GitHub](https://github.com/Club-Informatico/cuaderno-del-programador/issues).
 
 ### Proponer Mejoras
 
